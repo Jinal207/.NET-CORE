@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET CORE API\\Bank.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\demo\\dataannotationscheatsheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\demo\\dataannotationscheatsheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\models\\updatebankdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\models\\updatebankdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\models\\bankdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\models\\bankdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\models\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\models\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\migrations\\20250918064550_migration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\migrations\\20250918064550_migration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|d:\\.net core api\\bank.api\\bank.api\\bank.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BC15641C-23B4-431A-AF1D-80C62CF93990}|Bank.Api\\Bank.Api.csproj|solutionrelative:bank.api\\bank.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250918064550_migration1.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Migrations\\20250918064550_migration1.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Migrations\\20250918064550_migration1.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Migrations\\20250918064550_migration1.cs",
+              "RelativeToolTip": "Bank.Api\\Migrations\\20250918064550_migration1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T05:07:08.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Bank.Api\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T04:26:04.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Bank.Api\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Bank.Api\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-19T05:06:54.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bank.Api.csproj",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
+              "RelativeDocumentMoniker": "Bank.Api\\Bank.Api.csproj",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
+              "RelativeToolTip": "Bank.Api\\Bank.Api.csproj",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T09:51:54.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "updateBankDetailsDTO.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\updateBankDetailsDTO.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Models\\updateBankDetailsDTO.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\updateBankDetailsDTO.cs",
+              "RelativeToolTip": "Bank.Api\\Models\\updateBankDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:32:51.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankDetails.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\BankDetails.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Models\\BankDetails.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\BankDetails.cs",
+              "RelativeToolTip": "Bank.Api\\Models\\BankDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:16:11.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BankDetailsDTO.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\BankDetailsDTO.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Models\\BankDetailsDTO.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Models\\BankDetailsDTO.cs",
+              "RelativeToolTip": "Bank.Api\\Models\\BankDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:16:09.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BankController.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Controllers\\BankController.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Controllers\\BankController.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Controllers\\BankController.cs",
+              "RelativeToolTip": "Bank.Api\\Controllers\\BankController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAA6wF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T08:55:53.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Program.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Program.cs",
+              "RelativeToolTip": "Bank.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:51:08.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataAnnotationsCheatSheet.cs",
+              "DocumentMoniker": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Demo\\DataAnnotationsCheatSheet.cs",
+              "RelativeDocumentMoniker": "Bank.Api\\Demo\\DataAnnotationsCheatSheet.cs",
+              "ToolTip": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Demo\\DataAnnotationsCheatSheet.cs",
+              "RelativeToolTip": "Bank.Api\\Demo\\DataAnnotationsCheatSheet.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAADwv4QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T05:07:50.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
