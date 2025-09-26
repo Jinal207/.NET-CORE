@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "UoJBxAV9Z0XKRPFyCje+/ilUZuUW4mzip1+8qHcWJKM=",
+  "Hash": "yfgu0XukRlSEv7+wk0t/a48er/WJGYp34LLvq+WpIEk=",
   "Source": "Bank.Api",
   "BasePath": "_content/Bank.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Bank.Api\\wwwroot",
+      "Source": "Bank.Api",
+      "ContentRoot": "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\wwwroot\\",
+      "BasePath": "_content/Bank.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

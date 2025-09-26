@@ -130,3 +130,15 @@
 //        public double CustomBalance { get; set; }
 //    }
 //}
+
+// [FromRoute] - Binds values from the URL route parameters to action method parameters
+// [FromQuery] - Binds values from the query string (?key=value) to action method parameters
+// [FromBody] - Binds values from the reque st body (usually JSON) to complex objects or parameters
+// [FromForm] - Binds values from form data (x-www-form-urlencoded or multipart/form-data)
+// [FromHeader] - Binds values from HTTP headers to parameters
+// [FromServices] - Injects registered services from dependency injection into action method parameters
+// Complex type binding - Automatically maps JSON or query string to object properties
+// List/Array binding - Supports binding arrays or lists from JSON body or query string
+// Model binding is automatic - ASP.NET Core automatically converts types and populates parameters
+// Works with simple and complex types - int, string, Guid, objects, nested objects, lists
+// Integration with validation - Works seamlessly with Data Annotations and ModelState validation

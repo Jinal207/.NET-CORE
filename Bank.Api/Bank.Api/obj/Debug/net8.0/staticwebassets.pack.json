@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\.NET WORKSPACE\\.NET CORE API\\Bank.Api\\Bank.Api\\wwwroot\\uploads\\4b4c8e1d-584f-4aaf-813b-6b6c97e8cb63.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\4b4c8e1d-584f-4aaf-813b-6b6c97e8cb63.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bank.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Bank.Api.props",
+      "PackagePath": "build\\Bank.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Bank.Api.props",
+      "PackagePath": "buildMultiTargeting\\Bank.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Bank.Api.props",
+      "PackagePath": "buildTransitive\\Bank.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

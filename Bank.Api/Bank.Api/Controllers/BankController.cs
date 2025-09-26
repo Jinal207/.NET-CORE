@@ -1,95 +1,125 @@
-﻿using Bank.Api.Data;
+﻿using Azure;
+using Bank.Api.Data;
 using Bank.Api.Models;
-using Microsoft.AspNetCore.Http;
+using Bank.Api.Repository;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
 
 namespace Bank.Api.Controllers
 {
+    [LogActionFilterClass]
     [Route("api/[controller]")]
     [ApiController]
-    public class BankController : ControllerBase
+    [Authorize]
+    public class BankController(ILogger<BankController> _logger, IBankRepository _bankRepository) : ControllerBase
     {
-        private readonly ApplicationDbContext dbContext;
-        public BankController(ApplicationDbContext dbContext)
-        {
-            this.dbContext = dbContext;
-        }
+        // SECOND WAY TO INJECT......
+        //private readonly ApplicationDbContext _dbContext;
+        //private readonly ILogger<BankController> _logger;
+
+        //// Constructor for dependency injection
+        //public BankController(ApplicationDbContext dbContext, ILogger<BankController> logger)
+        //{
+        //    _dbContext = dbContext;
+        //    _logger = logger;
+        //}
 
         [HttpGet]
-        public IActionResult getAllBankDetails()
+        public async Task<IActionResult> GetAllBankDetails()
         {
-            var allBankDetails = dbContext.BankDetails.ToList();
+            var allBankDetails = await _bankRepository.GetAllAsync();
             return Ok(allBankDetails);
         }
 
-        [HttpPost]
-        public IActionResult addBankDetails(BankDetailsDTO bankDetailsDTO)
+        [HttpGet]
+        [Route("{accountId:guid}")]
+        public async Task<IActionResult> GetBankDetailsById(Guid accountId)
         {
-            var bankDetails = new BankDetails()
-            {
-                AccountName = bankDetailsDTO.AccountName,
-                Balance = bankDetailsDTO.Balance,
-            };
-            dbContext.BankDetails.Add(bankDetails);
-            dbContext.SaveChanges();
+            var bankDetails = await _bankRepository.GetByIdAsync(accountId);
+            if (bankDetails == null) return NotFound();
             return Ok(bankDetails);
         }
 
-        [HttpGet]
-        [Route("{AccountId:guid}")]
-        public IActionResult getBankDetailsById(Guid AccountId)
+        [HttpPost]
+        public async Task<IActionResult> AddBankDetails(BankDetailsDTO dto)
         {
-            var fethedData = dbContext.BankDetails.Find(AccountId);
-            if (fethedData is null)
+            var bankDetails = new BankDetails
             {
-                return NotFound();
-            }
-            return Ok(fethedData);
+                AccountName = dto.AccountName,
+                Balance = dto.Balance
+            };
+
+            await _bankRepository.AddAsync(bankDetails);
+            return Ok(bankDetails);
         }
 
-        [HttpPut]
-        [Route("{AccountId:guid}")]
-        public IActionResult updateBankDetails(Guid AccountId, updateBankDetailsDTO updateBankDetails)
+        [HttpPut("{accountId:guid}")]
+        public async Task<IActionResult> UpdateBankDetails(Guid accountId, updateBankDetailsDTO dto)
         {
-            var fetchedData = dbContext.BankDetails.Find(AccountId);
-            if (fetchedData is null)
-            {
-                return NotFound();
-            }
-            fetchedData.AccountName = updateBankDetails.AccountName;
-            fetchedData.Balance = updateBankDetails.Balance;
-            dbContext.SaveChanges();
-            return Ok(updateBankDetails);
+            var bankDetails = await _bankRepository.GetByIdAsync(accountId);
+            if (bankDetails == null) return NotFound();
+
+            bankDetails.AccountName = dto.AccountName;
+            bankDetails.Balance = dto.Balance;
+
+            await _bankRepository.UpdateAsync(bankDetails);
+            return Ok(bankDetails);
         }
 
-        [HttpDelete]
-        [Route("{AccountId:guid}")]
-        public IActionResult deleteBankDetails(Guid AccountId)
+        [HttpDelete("{accountId:guid}")]
+        public async Task<IActionResult> DeleteBankDetails(Guid accountId)
         {
-            var fetchedData = dbContext.BankDetails.Find(AccountId);
-            if (fetchedData is null)
-            {
-                return NotFound();
-            }
-            dbContext.BankDetails.Remove(fetchedData);
-            dbContext.SaveChanges();
+            await _bankRepository.DeleteAsync(accountId);
             return Ok("Deleted");
         }
-    }
 
+        [HttpGet("search/{searchText}")]
+        public async Task<IActionResult> GetFilteredData(string searchText)
+        {
+            var results = await _bankRepository.SearchAsync(searchText);
+            return Ok(results);
+        }
+
+        [HttpPatch("{accountId:guid}")]
+        public async Task<IActionResult> PatchBankDetails(Guid accountId, JsonPatchDocument<BankDetails> patchDoc)
+        {
+            if (patchDoc == null) return BadRequest("Document is null");
+
+            var bankDetails = await _bankRepository.GetByIdAsync(accountId);
+            if (bankDetails == null) return NotFound();
+
+            patchDoc.ApplyTo(bankDetails, ModelState);
+
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            await _bankRepository.UpdateAsync(bankDetails);
+            return Ok(bankDetails);
+        }
+
+
+        [HttpGet("hidden-action")]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [HttpGet("test-logging")]
+        public IActionResult TestLogging()
+        {
+            _logger.LogInformation("TestLogging endpoint called."); // Info
+            _logger.LogWarning("This is a warning example."); // Warning
+            _logger.LogError("This is an error example."); // Error
+
+            try
+            {
+                int x = 0;
+                int y = 10 / x; // will throw
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An exception occurred in TestLogging."); // Exception logging
+            }
+
+            return Ok("Logging test completed!");
+        }
+    }
 }
 
-// [FromRoute] - Binds values from the URL route parameters to action method parameters
-// [FromQuery] - Binds values from the query string (?key=value) to action method parameters
-// [FromBody] - Binds values from the request body (usually JSON) to complex objects or parameters
-// [FromForm] - Binds values from form data (x-www-form-urlencoded or multipart/form-data)
-// [FromHeader] - Binds values from HTTP headers to parameters
-// [FromServices] - Injects registered services from dependency injection into action method parameters
-// Complex type binding - Automatically maps JSON or query string to object properties
-// List/Array binding - Supports binding arrays or lists from JSON body or query string
-// Model binding is automatic - ASP.NET Core automatically converts types and populates parameters
-// Works with simple and complex types - int, string, Guid, objects, nested objects, lists
-// Integration with validation - Works seamlessly with Data Annotations and ModelState validation
 

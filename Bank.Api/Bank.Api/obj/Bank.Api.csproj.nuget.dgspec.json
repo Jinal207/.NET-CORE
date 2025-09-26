@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj": {}
+    "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\Bank.Api.csproj": {}
   },
   "projects": {
-    "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj": {
+    "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\Bank.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
+        "projectUniqueName": "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
         "projectName": "Bank.Api",
-        "projectPath": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
+        "projectPath": "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\Bank.Api.csproj",
         "packagesPath": "C:\\Users\\jayde\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET CORE API\\Bank.Api\\Bank.Api\\obj\\",
+        "outputPath": "E:\\.NET-CORE\\Bank.Api\\Bank.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jayde\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -73,10 +89,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[13.18.2, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
